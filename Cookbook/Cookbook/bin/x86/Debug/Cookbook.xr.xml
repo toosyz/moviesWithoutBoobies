@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Page" />
+    <RootPropertyPathName Name="PopularSeriesList" />
+    <RootPropertyPathName Name="name" />
+    <RootPropertyPathName Name="poster_uri" />
+    <RootPropertyPathName Name="PopularMovieList" />
+    <RootPropertyPathName Name="title" />
+    <RootPropertyPathName Name="query" />
+    <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="Crews" />
+    <RootPropertyPathName Name="Casts" />
+    <RootPropertyPathName Name="job" />
+    <RootPropertyPathName Name="character" />
+    <RootPropertyPathName Name="profile_uri" />
+    <RootPropertyPathName Name="Movie" />
+    <RootPropertyPathName Name="release_date" />
+    <RootPropertyPathName Name="original_language" />
+    <RootPropertyPathName Name="runtime" />
+    <RootPropertyPathName Name="overview" />
+    <RootPropertyPathName Name="tagline" />
+    <RootPropertyPathName Name="Results" />
+    <RootPropertyPathName Name="media_type" />
+    <RootPropertyPathName Name="picture_path" />
+    <RootPropertyPathName Name="Credits" />
+    <RootPropertyPathName Name="Person" />
+    <RootPropertyPathName Name="biography" />
+    <RootPropertyPathName Name="place_of_birth" />
+    <RootPropertyPathName Name="birthday" />
+    <RootPropertyPathName Name="Seasons" />
+    <RootPropertyPathName Name="episodes" />
+    <RootPropertyPathName Name="episode_number" />
+    <RootPropertyPathName Name="Series" />
+    <RootPropertyPathName Name="first_air_date" />
+    <RootPropertyPathName Name="number_of_episodes" />
+    <RootPropertyPathName Name="number_of_seasons" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Template10.Common.BootStrapper">
+      <RootProperty Name="Resources" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary">
+      <RootProperty Name="MergedDictionaries" />
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Resources" />
+    </RootType>
+    <RootType FullName="Cookbook.ViewModels.MainPageViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Children" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Orientation" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Child" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="VerticalContentAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="FontStyle" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Mode" />
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.GridView">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="IsItemClickEnabled" />
+      <RootProperty Name="ItemTemplate" />
+      <RootEvent Name="ItemClick" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Stretch" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Color" />
+      <RootProperty Name="Opacity" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Cookbook.Views.MainPage" />
+    <RootType FullName="Cookbook.ViewModels.MovieDetailsPageViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Data.CollectionViewSource">
+      <RootProperty Name="IsSourceGrouped" />
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Transitions" />
+      <RootProperty Name="ItemContainerTransitions" />
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.NullExtension" />
+    <RootType FullName="Cookbook.Views.MovieDetailsPage" />
+    <RootType FullName="Cookbook.ViewModels.MultiSearchPageViewModel" />
+    <RootType FullName="Cookbook.Views.MultiSearchPage" />
+    <RootType FullName="Cookbook.ViewModels.PersonDetailsPageViewModel" />
+    <RootType FullName="Cookbook.Views.PersonDetailsPage" />
+    <RootType FullName="Cookbook.ViewModels.SeriesDetailsPageViewModel" />
+    <RootType FullName="Cookbook.Views.SeriesDetailsPage" />
+  </Roots.RootTypes>
+</Roots>

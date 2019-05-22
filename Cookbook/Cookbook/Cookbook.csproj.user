@@ -2,5 +2,10 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectView>ProjectFiles</ProjectView>
+    <SplashScreenSource>D:\DOLGAIM\Dokumentumok\006 kliens\moviesWithoutBoobies\Cookbook\Cookbook\Assets\tumblr_o67w54IbZK1slge6ao6_1280.png</SplashScreenSource>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DeviceId>30F105C9-681E-420b-A277-7C086EAD8A4E</DeviceId>
+    <UseEmulator>true</UseEmulator>
   </PropertyGroup>
 </Project>
