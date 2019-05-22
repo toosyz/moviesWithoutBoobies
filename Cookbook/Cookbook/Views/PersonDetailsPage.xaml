@@ -1,0 +1,72 @@
+﻿<Page
+    x:Class="Cookbook.Views.PersonDetailsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Cookbook.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="using:Cookbook.ViewModels"
+    mc:Ignorable="d">
+
+
+    <Page.DataContext>
+        <vm:PersonDetailsPageViewModel x:Name="ViewModel" />
+    </Page.DataContext>
+
+    <Page.Resources>
+        <CollectionViewSource x:Key="Credits" IsSourceGrouped="False"
+                              Source="{Binding Credits}" />
+    </Page.Resources>
+
+    <ScrollViewer Background="#FFF0F2">
+        <StackPanel>
+            <TextBlock Text="{Binding Person.name}" TextWrapping="WrapWholeWords" TextAlignment="Justify" FontSize="26" FontFamily="Impact" HorizontalAlignment="Center" Margin="0,0,0,0"/>
+            <Border Margin="10" BorderBrush="#FFB6C1" BorderThickness="5" Padding="10" Background="White" >
+                <Grid Margin="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Grid.Column="0" Source="{Binding Person.profile_uri}"/>
+                    <StackPanel Grid.Column="1" Orientation="Vertical" Margin="10">
+                        <TextBlock Text="Birthday:" FontSize="14sp" FontFamily="Courier New" TextAlignment="Left" />
+                        <TextBlock Text="{Binding Person.birthday}" TextWrapping="WrapWholeWords" TextAlignment="Left" Margin="0,0,0,10"/>
+                        <TextBlock Text="Birth place:" FontSize="14sp" FontFamily="Courier New" TextAlignment="Left" />
+                        <TextBlock Text="{Binding Person.place_of_birth}" TextWrapping="WrapWholeWords" TextAlignment="Left" Margin="0,0,0,10"/>
+                        <TextBlock Text="Biography:" FontSize="14sp" FontFamily="Courier New" TextAlignment="Left" />
+                        <TextBlock Text="{Binding Person.biography}" TextWrapping="WrapWholeWords" TextAlignment="Left" Margin="0,0,0,10"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+            <Border Margin="10" BorderBrush="#FFB6C1" BorderThickness="5" Padding="10" Background="White">
+                <StackPanel Margin="0">
+                    <TextBlock Text="Cast:" FontSize="14sp" TextAlignment="Justify" FontFamily="Courier New" />
+                    <Grid Margin="10">
+                        <GridView IsItemClickEnabled="True" 
+                              ItemsSource="{Binding Source={StaticResource Credits}}"
+                              ItemClick="GridView_ItemClick">
+                            <GridView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Width="200">
+                                        <Image Source="{Binding poster_uri}" Stretch="UniformToFill" VerticalAlignment="Center" />
+                                        <Border VerticalAlignment="Bottom">
+                                            <Border.Background>
+                                                <SolidColorBrush Color="AntiqueWhite" Opacity="0.8" />
+                                            </Border.Background>
+                                            <StackPanel>
+                                                <TextBlock Text="{Binding title}" Foreground="Black" TextWrapping="WrapWholeWords" FontStyle="Italic" FontWeight="SemiBold" />
+                                                <TextBlock Text="{Binding name}" Foreground="Black" TextWrapping="WrapWholeWords" FontStyle="Italic" FontWeight="SemiBold"/>
+                                                <TextBlock Text="{Binding character}" Foreground="Black" TextWrapping="WrapWholeWords" FontSize="12sp" Margin="10,0,0,0" />
+                                            </StackPanel>
+                                        </Border>
+                                    </Grid>
+                                </DataTemplate>
+                            </GridView.ItemTemplate>
+                        </GridView>
+                    </Grid>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</Page>
