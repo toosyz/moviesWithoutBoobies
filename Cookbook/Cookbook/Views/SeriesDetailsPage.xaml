@@ -2,12 +2,10 @@
     x:Class="Cookbook.Views.SeriesDetailsPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Cookbook.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="using:Cookbook.ViewModels"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
 
 
     <Page.DataContext>
@@ -66,7 +64,7 @@
                                                 <SolidColorBrush Color="AntiqueWhite" Opacity="0.8" />
                                             </Border.Background>
                                             <StackPanel>
-                                                <TextBlock Text="{Binding name}" Foreground="Black" TextWrapping="WrapWholeWords" FontStyle="Italic" FontWeight="SemiBold" Margin="0" />
+                                                <TextBlock Text="{Binding name}" Foreground="Black" TextWrapping="WrapWholeWords" FontSize="14sp" FontWeight="SemiBold" Margin="0" />
                                                 <TextBlock Text="{Binding character}" Foreground="Black" TextWrapping="WrapWholeWords" FontSize="12sp" Margin="0" />
                                             </StackPanel>
                                         </Border>

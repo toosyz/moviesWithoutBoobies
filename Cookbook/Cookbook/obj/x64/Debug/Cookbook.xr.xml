@@ -47,7 +47,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="DataContext" />
       <RootProperty Name="Content" />
-      <RootProperty Name="Background" />
       <RootProperty Name="Resources" />
     </RootType>
     <RootType FullName="Cookbook.ViewModels.MainPageViewModel" />
@@ -115,8 +114,8 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="Opacity" />
-      <RootProperty Name="FontStyle" />
       <RootProperty Name="TextAlignment" />
+      <RootProperty Name="FontStyle" />
       <RootProperty Name="Padding" />
       <RootProperty Name="Width" />
     </RootType>

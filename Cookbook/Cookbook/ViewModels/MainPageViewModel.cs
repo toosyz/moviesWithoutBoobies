@@ -1,15 +1,11 @@
 using System.Collections.Generic;
-using System;
-using System.Linq;
 using System.Threading.Tasks;
 using Template10.Mvvm;
-using Template10.Services.NavigationService;
 using Windows.UI.Xaml.Navigation;
 using System.Collections.ObjectModel;
 using Cookbook.Models;
 using Cookbook.Services;
 using Cookbook.Views;
-using Windows.UI.Xaml.Controls;
 using System.ComponentModel;
 
 namespace Cookbook.ViewModels
